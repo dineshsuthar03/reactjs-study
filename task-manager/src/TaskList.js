@@ -3,9 +3,10 @@ import { TaskContext } from "./TaskContext";
 
 
 function TaskList(props){
-    const[state,dispatch] = useContext(TaskContext)
+    
+    const { state, dispatch } = useContext(TaskContext);
+    const { tasks } = state;
 
-    const{task} =state;
 
     return (
         <div>

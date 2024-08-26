@@ -8,7 +8,9 @@ function TaskInput(props){
     const { dispatch } = useContext(TaskContext);
     const handleAddTask = ()=> {
         if(newTask.trim() === '') return;
-        dispatch({ type: 'ADD_TASK', payload: { title: newTask, completed: false }});
+        dispatch({ type: 'ADD_TASK', payload: newTask });
+
+        
         setNewTask('');
     }
     return (

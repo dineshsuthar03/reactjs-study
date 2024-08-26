@@ -1,4 +1,4 @@
-export const iniitalState= {
+export const initialState= {
     tasks:[]
 }
 
